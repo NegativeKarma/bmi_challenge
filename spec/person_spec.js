@@ -25,7 +25,7 @@ describe("Person", function() {
 
   describe("Imperial system", function() {
     beforeEach(function() {
-      person = new Person({weight: 165, height: 6});
+      person = new Person({weight: 165, height: 72});
     });
 
     it("should have weight of 165", function() {
@@ -33,7 +33,7 @@ describe("Person", function() {
     });
 
     it("should have height of 186", function() {
-      expect(person.height).toEqual(6);
+      expect(person.height).toEqual(72);
     });
     it("should calculate BMI value", function() {
       person.calculate_imperial_bmi();

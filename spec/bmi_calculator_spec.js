@@ -16,7 +16,7 @@ describe("BMICalculator", function() {
 
   describe("Imperial system", function() {
     beforeEach(function() {
-      person= new Person({weight: 165, height: 6});
+      person= new Person({weight: 165, height: 72});
       calculator = new BMICalculator();
     });
 
