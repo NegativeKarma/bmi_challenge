@@ -20,9 +20,9 @@ describe("BMICalculator", function() {
       calculator = new BMICalculator();
     });
 
-    it("calculates BMI for a person using metric method", function() {
-      calculator.metric_bmi(person);
-      expect(person.bmiValue).toEqual(45833.33);
+    it("calculates BMI for a person using imperial method", function() {
+      calculator.imperial_bmi(person);
+      expect(person.bmiValue).toEqual(22.38);
     });
   });
 

@@ -36,12 +36,12 @@ describe("Person", function() {
       expect(person.height).toEqual(6);
     });
     it("should calculate BMI value", function() {
-      person.calculate_bmi();
-      expect(person.bmiValue).toEqual(45833.33);
+      person.calculate_imperial_bmi();
+      expect(person.bmiValue).toEqual(22.38);
     });
     it("should have a BMI message", function() {
-      person.calculate_bmi();
-      expect(person.bmiMessage).toEqual("Obese");
+      person.calculate_imperial_bmi();
+      expect(person.bmiMessage).toEqual("Normal");
     });
   });
 
