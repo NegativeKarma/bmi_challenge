@@ -11,6 +11,6 @@ describe('BMI_UI - index.html', function() {
       expect($('#display_value').text()).toBe('Your BMI is 26.01');
     });
     it("display BMI Message", function() {
-      expect($('display_message').text()).toBe('');
+      expect($('#display_message').text()).toBe('and you are Overweight');
     });
 });

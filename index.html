@@ -13,34 +13,13 @@
       <input type="text" id="height" placeholder="Height">
       <input type="button" id="calculate" value="Calculate">
       <input type="button" id="imperial_calculate" value="Switch to imperial">
+      <input type="checkbox" id="checkbox" value="check for imperial">
     </form>
     <div>
       <span id="display_value"></span>
       <span id="display_message"></span>
 
     </div>
+    <script src="src/script.js" charset="utf-8"></script>
   </body>
 </html>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#calculate').click(function () {
-      var w = parseFloat($('#weight').val());
-      var h = parseFloat($('#height').val());
-      var person = new Person({weight: w, height: h});
-      person.calculate_bmi();
-      $('#display_value').html('Your BMI is ' + person.bmiValue);
-      $('#display_message').html('and you are '+ person.bmiMessage);
-    });
-    $('#imperial_calculate').click(function () {
-      $('#calculate').click(function () {
-        var w = parseFloat($('#weight').val());
-        var h = parseFloat($('#height').val());
-        var person = new Person({weight: w, height: h});
-        person.calculate_imperial_bmi();
-        $('#display_value').html('Your BMI is ' + person.bmiValue);
-        $('#display_message').html('and you are '+ person.bmiMessage);
-      });
-    });
-  });
-</script>
