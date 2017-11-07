@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('#display_value').html('Your BMI is ' + person.bmiValue);
     $('#display_message').html('and you are '+ person.bmiMessage);
   });
-  $('#imperial_calculate').click(function () {
+  /*$('#imperial_calculate').click(function () {
     $('#calculate').click(function () {
       var w = parseFloat($('#weight').val());
       var h = parseFloat($('#height').val());
@@ -16,7 +16,7 @@ $(document).ready(function () {
       $('#display_value').html('Your BMI is ' + person.bmiValue);
       $('#display_message').html('and you are '+ person.bmiMessage);
     });
-  });
+  });*/
   $('#checkbox').click(function () {
     $('#calculate').click(function () {
       var w = parseFloat($('#weight').val());

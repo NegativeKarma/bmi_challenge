@@ -6,20 +6,55 @@
     <script src="src/person.js"></script>
     <script src="src/bmi_calculator.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <h1>This is the BMI test, it will make you feel bad if you're overweight</h1>
+    <p>
+        Enter your weight and height, use/check the button/checkbox to use imperial measures
+    </p>
     <form>
       <input type="text" id="weight" placeholder="Weight">
       <input type="text" id="height" placeholder="Height">
       <input type="button" id="calculate" value="Calculate">
-      <input type="button" id="imperial_calculate" value="Switch to imperial">
-      <input type="checkbox" id="checkbox" value="check for imperial">
+      <!-- <input type="button" id="imperial_calculate" value="Switch to imperial">-->
+      <div>
+        <label><input type="checkbox" id="checkbox" /> Check this to switch to imperial</label>
+      </div>
     </form>
     <div>
       <span id="display_value"></span>
       <span id="display_message"></span>
 
     </div>
+    <div>
+    <h2>BMI Weight Status Categories</h2>
+    <p>
+      Below you will find the graph of how you BMI is classed.
+    </p>
+  </div>
+  <table style="width:100%">
+    <tr>
+      <th>BMI</th>
+      <th>Weight Status</th>
+    </tr>
+    <tr>
+      <td>Below 18.5</td>
+      <td>Underweight</td>
+    </tr>
+    <tr>
+      <td>Below 18.5 - 24.9</td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td>Below 25 - 29.9</td>
+      <td>Overweight</td>
+    </tr>
+    <tr>
+      <td>Over 30.0</td>
+      <td>Obese</td>
+    </tr>
+  </table>
     <script src="src/script.js" charset="utf-8"></script>
   </body>
 </html>
