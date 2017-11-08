@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>BMI Test</title>
-    <script src="src/person.js"></script>
-    <script src="src/bmi_calculator.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>This is the BMI test, it will make you feel bad if you're overweight</h1>
-    <p>
-        Enter your weight and height, use/check the button/checkbox to use imperial measures
-    </p>
-    <form>
-      <input type="text" id="weight" placeholder="Weight">
-      <input type="text" id="height" placeholder="Height">
-      <input type="button" id="calculate" value="Calculate">
-      <div>
-        <label><input type="checkbox" id="checkbox" /> Check this to switch to imperial</label>
-      </div>
-    </form>
-    <div>
-      <span id="display_value"></span>
-      <span id="display_message"></span>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>BMI Test</title>
+  <script src="src/person.js"></script>
+  <script src="src/bmi_calculator.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>This is the BMI test
+  <small class="text-muted">it will make you feel bad if you're overweight</small></h1>
+  <form>
+    <div class="form-group">
+      <label for="weight">Weight</label>
+      <input type="text" class="form-control" id="weight" aria-describedby="emailHelp" placeholder="Enter your weight">
+      <small id="weightCatchPhrase" class="form-text text-muted">We'll never share your weight with anyone else(maybe).</small>
     </div>
-    <div>
-    <h2>BMI Weight Status Categories</h2>
+    <div class="form-group">
+      <label for="height">Height</label>
+      <input type="text" class="form-control" id="height" placeholder="Enter your height">
+      <small id="heightInstructions" class="form-text text-muted">If you use for the imperial method, please use inches(e.g. if you are 6'11 then you are 83 inches [(feet * 12) + 11] ).</small>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+      <input type="checkbox" id="checkbox" class="form-check-input">
+      Check here to switch to imperial
+    </label>
+    </div>
+    <button type="button" id="calculate" class="btn btn-outline-dark">Calculate</button>
+  </form>
+  <div>
     <p>
-      Below you will find the graph of how you BMI is classed.
+      <span id="display_value"></span>
+      <span id="display_message" class="badge badge-secondary"></span>
     </p>
   </div>
-  <table style="width:100%">
+  <h2>BMI Weight Status Categories</h2>
+  <table style="width:100%" class="table table-hover table-dark">
     <tr>
       <th>BMI</th>
       <th>Weight Status</th>
@@ -54,6 +63,10 @@
       <td>Obese</td>
     </tr>
   </table>
-    <script src="src/script.js" charset="utf-8"></script>
-  </body>
+  <script src="src/script.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
 </html>

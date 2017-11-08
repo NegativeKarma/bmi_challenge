@@ -4,7 +4,10 @@ describe("BMICalculator", function() {
 
   describe("Metric system", function() {
     beforeEach(function() {
-      person= new Person({weight: 90, height: 186});
+      person = new Person({
+        weight: 90,
+        height: 186
+      });
       calculator = new BMICalculator();
     });
 
@@ -16,7 +19,10 @@ describe("BMICalculator", function() {
 
   describe("Imperial system", function() {
     beforeEach(function() {
-      person= new Person({weight: 165, height: 72});
+      person = new Person({
+        weight: 165,
+        height: 72
+      });
       calculator = new BMICalculator();
     });
 
