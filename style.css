@@ -18,6 +18,11 @@ form {
   padding: 20px
 }
 
+label {
+  font-family: sans_serif;
+  padding-top: 50px
+}
+
 table {
   font-family: sans-serif;
   width: 50%;
