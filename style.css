@@ -1,16 +1,24 @@
 body {
   background-color: #eee;
 }
-h1, h2 {
+
+h1 {
   color: #62dd10;
   padding: 20px;
   font-family: sans-serif;
 }
 
+h2 {
+  color: #62dd10;
+  padding: 20px;
+  font-family: sans-serif;
+  margin-top: 2.0rem;
+}
+
 p {
   font-family: sans-serif;
   padding: 20px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 form {
@@ -18,15 +26,11 @@ form {
   padding: 20px
 }
 
-label {
-  font-family: sans_serif;
-  padding-top: 50px
-}
-
 table {
   font-family: sans-serif;
   width: 50%;
 }
+
 td {
   padding: 8px;
   text-align: center;
@@ -40,6 +44,18 @@ th {
   border: 1px solid black;
 }
 
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
 .form-control {
   width: 50% !important;
+}
+
+.text-muted {
+  color: #00cc99!important;
+}
+
+.form-text {
+  color: #868e96!important;
 }
