@@ -6,28 +6,45 @@
     <script src="src/person.js"></script>
     <script src="src/bmi_calculator.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>This is the BMI test, it will make you feel bad if you're overweight</h1>
     <p>
         Enter your weight and height, use/check the button/checkbox to use imperial measures
     </p>
-    <form>
-      <input type="text" id="weight" placeholder="Weight">
-      <input type="text" id="height" placeholder="Height">
-      <input type="button" id="calculate" value="Calculate">
+    <!--<form>
+      <input type="text" id="weight" placeholder="Weight" class="border-primary">
+      <input type="text" id="height" placeholder="Height" class="border-primary">
+      <button type="button" id="calculate" class="btn btn-outline-dark">Calculate</button>
       <div>
-        <label><input type="checkbox" id="checkbox" />Check this to switch to imperial</label>
+        <label><input type="checkbox" id="checkbox" /> Check this to switch to imperial</label>
       </div>
-    </form>
+    </form>-->
+    <form>
+  <div class="form-group">
+    <label for="weight">Weight</label>
+    <input type="text" class="form-control" id="weight" aria-describedby="emailHelp" placeholder="Enter your weight">
+    <small id="weightCatchPhrase" class="form-text text-muted">We'll never share your weight with anyone else(maybe).</small>
+  </div>
+  <div class="form-group">
+    <label for="height">Height</label>
+    <input type="text" class="form-control" id="height" placeholder="Enter your height">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" id="checkbox" class="form-check-input">
+      Check here to switch to imperial
+    </label>
+  </div>
+  <button type="button" id="calculate" class="btn btn-outline-dark">Calculate</button>
+</form>
     <div>
       <span id="display_value"></span>
-      <span id="display_message"></span>
-
+      <span id="display_message" class="badge badge-secondary"></span>
     </div>
     <div>
     <h2>BMI Weight Status Categories</h2>
@@ -35,7 +52,7 @@
       Below you will find the graph of how you BMI is classed.
     </p>
   </div>
-  <table style="width:100%">
+  <table style="width:100%" class="table table-hover table-dark">
     <tr>
       <th>BMI</th>
       <th>Weight Status</th>

@@ -39,3 +39,7 @@ th {
   text-align: center;
   border: 1px solid black;
 }
+
+.form-control {
+  width: 50% !important;
+}
