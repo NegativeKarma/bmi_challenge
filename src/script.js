@@ -3,11 +3,15 @@ $(document).ready(function () {
     var w = parseFloat($('#weight').val());
     var h = parseFloat($('#height').val());
     var person = new Person({weight: w, height: h});
-    person.calculate_bmi();
+    if ($("#checkbox").prop('checked', true)) {
+      person.calculate_imperial_bmi();
+    } else {
+      person.calculate_bmi();
+    }
     $('#display_value').html('Your BMI is ' + person.bmiValue);
     $('#display_message').html('and you are '+ person.bmiMessage);
   });
-  $('#checkbox').click(function () {
+  /*$('#checkbox').click(function () {
     $('#calculate').click(function () {
       var w = parseFloat($('#weight').val());
       var h = parseFloat($('#height').val());
@@ -16,5 +20,5 @@ $(document).ready(function () {
       $('#display_value').html('Your BMI is ' + person.bmiValue);
       $('#display_message').html('and you are '+ person.bmiMessage);
     });
-  });
+  });*/
 });
