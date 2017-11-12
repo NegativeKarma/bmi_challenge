@@ -16,10 +16,10 @@ The application has been created with a test driven development philosophy using
 **How to use the BMI test**
 
 1. Run `rackup` in your terminal, this will start the server.
-2. In your browser copy this URL `http://localhost:9292/SpecRunner.html`, this will
+2. In your browser copy this URL http://localhost:9292/SpecRunner.html, this will
 open Jasmine's SpecRunner showing 12 green specs. It means that the application is running properly.
-3. In your browser copy this URL `http://localhost:9292/index.html`, this will open the site and you can test its features.
-4. Alternately you can copy this URL `https://negativekarma.github.io/bmi_challenge/` in your browser, this will run the web application from GitHub pages.
+3. In your browser copy this URL http://localhost:9292/index.html, this will open the site and you can test its features.
+4. Alternately you can copy this URL https://negativekarma.github.io/bmi_challenge/ in your browser, this will run the web application from GitHub pages.
 
 **Resources**
 
