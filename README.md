@@ -24,3 +24,5 @@ open Jasmine's SpecRunner showing 12 green specs. It means that the application 
 **Resources**
 
 * http://getbootstrap.com/docs/4.0/getting-started/introduction/
+* Setting 'checked’ for a checkbox with JQuery(answer by bchhun): https://stackoverflow.com/questions/426258/setting-checked-for-a-checkbox-with-jquery
+https://www.w3schools.com/jquery/html_prop.asp
